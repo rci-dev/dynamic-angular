@@ -1,0 +1,10 @@
+<p>cnt:{{resType}}:{{counter}}</p>
+ <p>
+  res: {{viewDefinition}}
+   </p>
+   <hr>
+  <dynamic-detail [htmlTemplate]=viewDefinition [resourceDef]=resourceDefinition [resources]=resourcesData (QEvent)="realEvent($event)"></dynamic-detail>
+  <hr>
+  <button (click)="newResource()">new tasks resources</button><button (click)="changeR2()">change res</button><br>
+ 
+

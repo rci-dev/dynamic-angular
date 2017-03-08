@@ -1,3 +1,13 @@
-<h1>
-  {{title}}
-</h1>
+
+  <h3>{{title}}</h3>
+  <d-component-1 #dyna [resource]="resource"></d-component-1>
+  <div><button (click)="rebuild()">rebuild</button>
+<select [(ngModel)]="typeValue" (change)="rebuild()">
+  <option value="ent">Entities</option>
+  <option value="cust">Customers</option>
+  <option value="issues">Issued</option>
+  <option value="sprints">Sprint Tasks</option>
+</select>
+   <button (click)="addTask()">new task</button>
+  </div>
+
